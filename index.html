@@ -4,6 +4,12 @@
     href="https://fonts.googleapis.com/css?family=Roboto"
     rel="stylesheet"
   />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
   <style>
     /* BASIC STYLES */
     body {
@@ -56,6 +62,7 @@
     }
 
     #sign_in {
+      margin-top: 12;
       color: #fff;
     }
 
@@ -225,28 +232,31 @@
 
   <!-- FORM SEARCH -->
   <div class="form">
-    <form>
-      <label for="form-search"></label>
+    <div
+      class="input-group mb-3"
+      style="width: 70%; margin-left: auto; margin-right: auto"
+    >
       <input
+        style="height:60"
         type="text"
-        id="form-search"
-        style="height: 60"
-        placeholder="尋找你想要的工作"
+        class="form-control"
+        placeholder="搜尋你想要的工作"
+        aria-label="Username"
+        aria-describedby="basic-addon1"
       />
-    </form>
+    </div>
   </div>
 
-  <!-- BUTTONS -->
   <div class="buttons">
-    <input type="submit" value="搜索工作" id="google_search" />
+    <div style="text-align: center" role="group" aria-label="...">
+      <button type="button" class="btn btn-light">搜尋工作</button>
+    </div>
   </div>
 
   <!-- FOOTER -->
-  <footer style="padding-left: 24">
-    <ul class="footer-left">
-      <div>
-        聯絡電話: 02-29888528
-      </div>
+  <div style="position: absolute; bottom: 0; width: 100%" class="card">
+    <div class="card-body">
+      <div>聯絡電話: 02-29888528</div>
       <div>
         手機: 0963217316
       </div>
@@ -256,6 +266,6 @@
       <div>
         目前產品測試中, 本網頁純屬聯絡用。 正式版的網頁，預計10月上線。
       </div>
-    </ul>
-  </footer>
+    </div>
+  </div>
 </body>
